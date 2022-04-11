@@ -1,0 +1,222 @@
+<html>
+<body>
+<header>
+  <nav>
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+  </nav>
+  <div class="icon">
+    <svg viewBox="0 0 512 512" width="100" title="th">
+  <path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z" />
+</svg>
+  </div>
+  <div class="img"></div>
+</header>
+
+<section class="hero">
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+  <div class="search">
+    <svg viewBox="0 0 512 512" width="100" title="search">
+  <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+</svg>
+    <input type="text">
+    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-256.png">
+  </div>
+  
+  <div class="buttons">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+  </div>
+</section>
+
+<footer>
+  <nav class="left">
+    <a href="#">About</a>
+    <a href="#">Advertising</a>
+    <a href="#">Business</a>
+    <a href="#">How Search Works</a>
+  </nav>
+  <nav class="right">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Settings</a>
+  </nav>
+  
+</footer>
+</body>
+<style>
+* {
+  font-family: arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-image: url(https://assets.codepen.io/7734602/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1645839486&width=512);
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 5px #eee;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 20px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #eee;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-self: flex-start;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.hero img {
+  margin-bottom: 40px;
+}
+
+.search {
+  border: 1px solid #eee;
+  width: 60%;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 5px;
+}
+
+.search:hover {
+  box-shadow: 0 0 10px 3px #eee;
+}
+
+input {
+  height: 70%;
+  width: 75%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+input::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.search svg {
+  margin-left:10px;
+  opacity: 0.4;
+}
+
+.search img {
+  width: 40px;
+  margin: 0;
+}
+
+.search img:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color:#eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: flex-end;
+}
+
+footer a {
+  color: gray;
+  padding: 0;
+  margin: 0 10px;
+}
+
+footer nav {
+  margin: 0 30px;
+  padding: 25px 0;
+}
+
+.buttons {
+  margin: 40px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #BDBDBD;
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .left {
+    padding: 15px 0;
+  }
+  footer .right {
+    padding: 0 0 15px;
+  }
+  footer a {
+    text-wrap: nowrap;
+  }
+}
+</style>
+</html>
+
